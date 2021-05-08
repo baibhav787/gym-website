@@ -1,0 +1,153 @@
+$primary-font: "Teko", sans-serif;
+$secondary-font: "Barlow", sans-serif;
+
+// font
+
+.para-top {
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 600;
+}
+.para-bottom {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+}
+.sub-heading {
+  font-family: $primary-font;
+  font-size: 44px;
+  font-weight: 600;
+}
+.cu-heading:hover {
+  color: #ff1313;
+}
+.cu-heading {
+  font-family: $primary-font;
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.custome-btn {
+  margin-top: 30px;
+  padding: 10px 30px !important;
+  background-color: #ff1313 !important;
+  color: white !important;
+  border-radius: 0 !important;
+  font-size: 20px !important;
+  font-family: $primary-font;
+  text-transform: uppercase;
+}
+//body
+body {
+  background-color: #f2f4f5 !important;
+}
+.container {
+  max-width: 1097px !important;
+}
+//header css
+#header {
+  background-color: #ffffff;
+}
+//hero css
+#hero {
+  height: 100vh;
+  background: url(/img/hero-bg.jpg) center center / cover;
+  position: relative;
+
+  .hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 90px;
+      font-family: $primary-font;
+      font-weight: 700;
+      color: #ffffff;
+    }
+  }
+}
+
+#hero::before {
+  content: "";
+  background-color: #18181886;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+//welcome
+
+//chose us
+#chose-us {
+  background-color: black;
+  color: white;
+
+  .cs-item {
+    text-align: center;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+    span {
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+      font-family: "flaticon";
+      font-size: 2rem;
+      display: inline-block;
+      background-color: #ffffff;
+      color: black;
+      text-align: center;
+      line-height: 90px;
+      margin-bottom: 1rem;
+    }
+    span:hover {
+      color: #ffffff;
+      background-color: #ff1313;
+    }
+  }
+}
+// info
+#info {
+  background-color: #151515;
+  color: white;
+  span {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    font-family: "flaticon";
+    font-size: 1.5rem;
+    display: inline-block;
+    background-color: #ff1313;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+  }
+  p {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+// map and request call
+.map {
+  height: 100%;
+  min-height: 500px;
+}
+.call {
+  padding: 70px 70px !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.781)), url("/img/call.png");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+//responsive
+@media only screen and (max-width: 900px) {
+  .hero-title {
+    top: 50%;
+    left: 10% !important;
+    transform: translate(0);
+  }
+}

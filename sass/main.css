@@ -1,0 +1,165 @@
+.para-top {
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.para-bottom {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sub-heading {
+  font-family: "Teko", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+}
+
+.cu-heading:hover {
+  color: #ff1313;
+}
+
+.cu-heading {
+  font-family: "Teko", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.custome-btn {
+  margin-top: 30px;
+  padding: 10px 30px !important;
+  background-color: #ff1313 !important;
+  color: white !important;
+  border-radius: 0 !important;
+  font-size: 20px !important;
+  font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #f2f4f5 !important;
+}
+
+.container {
+  max-width: 1097px !important;
+}
+
+#header {
+  background-color: #ffffff;
+}
+
+#hero {
+  height: 100vh;
+  background: url(/img/hero-bg.jpg) center center/cover;
+  position: relative;
+}
+
+#hero .hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#hero .hero-title h1 {
+  font-size: 90px;
+  font-family: "Teko", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#hero::before {
+  content: "";
+  background-color: #18181886;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#chose-us {
+  background-color: black;
+  color: white;
+}
+
+#chose-us .cs-item {
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+#chose-us .cs-item span {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  font-family: "flaticon";
+  font-size: 2rem;
+  display: inline-block;
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  line-height: 90px;
+  margin-bottom: 1rem;
+}
+
+#chose-us .cs-item span:hover {
+  color: #ffffff;
+  background-color: #ff1313;
+}
+
+#info {
+  background-color: #151515;
+  color: white;
+}
+
+#info span {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  font-family: "flaticon";
+  font-size: 1.5rem;
+  display: inline-block;
+  background-color: #ff1313;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+}
+
+#info p {
+  padding-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map {
+  height: 100%;
+  min-height: 500px;
+}
+
+.call {
+  padding: 70px 70px !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.781))), url("/img/call.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.781)), url("/img/call.png");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 900px) {
+  .hero-title {
+    top: 50%;
+    left: 10% !important;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
